@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IKIBINA</title>
+    <link rel="icon" href="/favicon.ico" />
+  <!-- <link rel="stylesheet" href="style.css" />  -->  
+    
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="brand">
+                <h1>IKIBINA</h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">AboutUs</a></li>
+                    <li><a href="#">ContactUs</a></li>
+                    <li><a href="#" class="highlight" onclick="document.getElementById('Admin-form').style.display='block'" style="width: auto;">LOGIN</a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+
+
+
+
+
+    <div id="Admin-form" class="modal">
+        <div class="modal-content form-box">
+            <span class="close" id="closeModal">&times;</span>
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" onclick="showAdmin()" class="toggle-btn">Admin</button>
+                <button type="button" onclick="showAgent()" class="toggle-btn">Agent</button>
+            </div>
+            <form id="adminForm" class="input-group-Admin" action="connect1.php" method="post">
+                <input type="text" class="input-field" placeholder="izina ry' itsinda" name="izina">
+                <input type="password" class="input-field" placeholder="Umubare w' ibanga" name="password">
+                <button type="submit" class="submit-btn"><b>Kwinjira </b>(as Admin)</button>
+            </form>
+            <form id="agentForm" class="input-group-Agent" action="connect2.php" method="post">
+                <input type="text" class="input-field" placeholder="Izina" name="izina">
+                <input type="password" class="input-field" placeholder="Umubare w' ibanga" name="password">
+                <button type="submit" class="submit-btn"><b>Kwinjira </b>(as Agent)</button>
+            </form>
+        </div>
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <div class="ikibina1" style="width: 100%; height: 800px; background-image: url('/assets/a-485fc6f7.jpg'); background-size: 100% 100%;">
+
+
+        <div class="container2" style="color: darkorange; font-size: large; font-weight: bolder; word-spacing: 0in;">
+            <span class="constant" style="color: rgb(255, 255, 255); font-style: normal; font-family: bolder;">IKIBINA CYAWE</span>
+            <span id="animated-text"></span>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="explore" style="height: 550px; width: 100%; padding: 100px;">
+        <div class="explore12" style="height: 500px; width: 80%; background-color: transparent; margin-left: 80px; border-radius: 15px; background-image: url('/assets/d-44c3e5f9.jpg'); background-repeat: no-repeat; background-size: 100% 120%;">
+            <div class="textexplore" style="padding: 100px;"><h1 style="font-size: 40px; color: white;">Become our Agent, and Start earning with IKIMINA<br><br>
+            <button class="highlight" style="border: 50px; background-color:whitesmoke; border-radius: 10px; width: 220px; height: 50px; font-size: 25px;"><a href="Register.html" style="text-decoration:none;"><strong> &nbsp;REGESTER&nbsp;</strong></a></button>
+            </h1></div>
+          
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section about-us" style="margin-right: 100px;">
+                <h2>About Us</h2>
+                <p>We are a leading saving company for rwanda, we providing top-notch banking services to cooperatives and local saving groups. Our mission is to deliver excellence transparency.</p>
+            </div>
+            <div class="footer-section contact-us" style="">
+                <h2>Contact Us</h2>
+                <ul>
+                    <li>Email: <a href="ikibinarwanda@gmail.com">ikibinarwanda@gmail.com</a></li>
+                    <li>Phone: <a href="tel:+250788826080">+250788826080</a></li>
+                    <li>Address: RWANDA, MUSANZE, MUHOZA, HANGA</li>
+                </ul>
+            </div>
+            <div class="footer-section services">
+                <h2>Services</h2>
+                <ul>
+                    <li><a href="#">Saving</a></li>
+                    <li><a href="#">Loan</a></li>
+                    <li><a href="#">Transparent records</a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+            <div class="footer-section partnerships">
+                <h2>Partnerships</h2>
+                <div class="partner-logos">
+                    <img src="/assets/icp-9b501f4e.png" alt="Partner 1">
+                    <img src="/assets/b-44401d03.jpeg" alt="Partner 2">
+                    <img src="/assets/risa-dc90521c.png" alt="Partner 3">
+                </div>
+            </div>
+        </div>
+        <div class="footer-social">
+            <h2>FoLLOw Us</h2>
+            <ul class="social-links">
+                <li><a href="#"><img src="/assets/facebook-2914ae42.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="/assets/x-1fe924a0.png" alt="Twitter"></a></li>
+                <li><a href="#"><img src="/assets/instagram-fed9f47a.png" alt="Instagram"></a></li>
+                <li><a href="#"><img src="/assets/linkedin-66de55a9.png" alt="LinkedIn"></a></li>
+            </ul>
+        </div>
+        <div class="footer-newsletter">
+            <h2>LeT's CoNnEcT</h2>
+            <form action="#">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">CONNECT</button>
+            </form>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 BLOCKCHAIN BASED IKIBINA. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        document.getElementById('hamburger').addEventListener('click', function () {
+            document.querySelector('.nav-list').classList.toggle('open');
+        });
+    </script>
+</body>
+
+
+
+    <script>
+        var modal = document.getElementById('Admin-form');
+        var loginBtn = document.getElementById('loginBtn');
+        var closeModal = document.getElementById('closeModal');
+
+        
+        loginBtn.onclick = function() {
+            modal.style.display = 'block';
+        }
+
+        
+        closeModal.onclick = function() {
+            modal.style.display = 'none';
+        }
+
+   
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+}
+    </script>
+
+
+
+
+
+
+
+
+        <style>
+
+/* styles.css */
+
+body {
+    background-image: url(/src/IKIBINA_frontend/photo/a.jpg);
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 10px 20px;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+   
+}
+
+.brand h1 {
+    font-size: 30px;
+    margin: 0;
+    color: orange;
+}
+
+.nav {
+    position: relative;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin-right: 20px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-list li a:hover, .nav-list li a.highlight {
+    background-color: orange;
+    color: black;
+    border-radius: 5px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: white;
+    margin: 4px 0;
+    transition: transform 0.3s;
+}
+
+@media (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-list.open {
+        display: flex;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+   
+
+
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4); 
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+            .container1 {
+            display: flex;
+            align-items: center;
+            margin-left: 1100px;
+            font-family: 'Senmoly Caligan.otf';
+            
+        }
+
+        .constant {
+            font-size:4em;
+            margin-right: 20px;
+            margin-top: 350px;
+            padding: 0px;
+            color: rgb(49, 48, 48);
+        }
+
+        #animated-text span {
+            font-size: 4em;
+            opacity: 0;
+            display: inline-block;
+            animation: fadeIn 1s forwards;
+            animation-delay: var(--delay);
+            margin-top: 350px;
+            color: orange;
+           
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+
+
+
+
+
+                .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 40px 0;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-section {
+            flex: 1;
+            margin: 10px;
+            min-width: 200px;
+        }
+
+        .footer-section h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .footer-section p, .footer-section ul, .footer-section form {
+            font-size: 1em;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer-section .partner-logos img {
+            max-height: 50px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .footer-social {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .footer-social h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .social-links li {
+            margin: 0 10px;
+        }
+
+        .social-links img {
+            max-height: 30px;
+        }
+
+        .footer-newsletter {
+            text-align: center;
+            margin-top: 60px;
+            
+        }
+
+        .footer-newsletter form {
+            display: inline-block;
+            margin: 0 auto;
+            
+        }
+
+        .footer-newsletter input {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .footer-newsletter button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #555;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .footer-newsletter button:hover {
+            background-color: #777;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 10px;
+            background-color: #222;
+            color: #ccc;
+            margin-top: 50px;
+        }
+
+        .footer-bottom p {
+            margin: 0;
+        }
+
+        
+
+                @media (max-width: 768px) {
+                    .footer-container {
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                }
+
+
+                @font-face {
+                    font-family: 'Senmoly Caligan.otf';
+                    src: url('Senmoly Caligan.otf.otf');
+                    font-weight: normal;
+                    font-style: normal;
+                }
+
+
+
+
+
+
+                #Admin-form{
+		display: none;
+	}
+
+	.form-box{
+		width: 350px;
+		height: 480px;
+		position: relative;
+		margin: 2% auto;
+		background:rgba(255, 255, 255, 0.3);
+		padding: 10px;
+		overflow: hidden;
+		border-radius: 12px;
+        margin-top: 200px;
+	}
+
+	.button-box{
+		width: 220px;
+		margin: 35px auto;
+		position: relative;
+		box-shadow:0 0 20px #ff61241f;
+		border-radius: 30px;
+		text-align: center;
+        
+	}
+
+	.toggle-btn{
+		padding: 10px 30px;
+		cursor:ponter;
+		background: transparent;
+		border: 0;
+		outline: none;
+		position: relative;
+	}
+
+	#btn{
+		top: 0;
+		left: 0;
+		position: absolute;
+		width: 110px;
+		height: 100%;
+		background: #f3c693;
+		border-radius: 30px;
+		transition: .5s;
+	}
+
+	.input-group-Admin{
+		top: 150px;
+		position: absolute;
+		width: 280px;
+		transition:.5s;
+	}
+
+	.input-group-Agent{
+		top: 150px;
+		position: absolute;
+		width: 280px;
+		transition:.5s;
+	}
+
+	.input-field{
+		width: 100%;
+		padding: 10px 0;
+		margin: 5px 0;
+		border-left: 0;
+		border-top: 0;
+		border-right: 0;
+		border-bottom: 1px solid #999;
+		outline: none;
+		background: transparent;
+	}
+
+	.submit-btn{
+		width: 85%;
+		padding: 10px 30px;
+		cursor: pointer;
+		display: block;
+		margin: auto;
+		background: #f3c693;
+		border: 0;
+		outline: none;
+		border-radius: 30px
+	}
+
+	.checkbox{
+		margin: 30px 10px 34px 0;
+	}
+
+	.span{
+		color: #777;
+		font-size:12px;
+		bottom:68px;
+		position: absolute;
+	}
+
+	#Admin{
+		left:50px;
+	}
+
+	#Admin input{
+		color: white;
+		font-size: 15px;
+	}
+
+	#Agent{
+		left: 450px;
+	}
+
+	#Agent input{
+		color: white;
+		font-size: 15px;
+	}
+
+	.Admin-page{
+		padding: 1px;
+	}
+    
+
+
+
+        </style>
+
+
+
+
+
+
+
+
+        <script>
+            const animatedTextElement = document.getElementById('animated-text');
+            const words = ["with transparency", "with security", "your best choice"]; 
+            let currentWordIndex = 0;
+
+            function animateText() {
+                
+                animatedTextElement.innerHTML = '';
+
+                const currentWord = words[currentWordIndex];
+                currentWord.split('').forEach((char, index) => {
+                    const span = document.createElement('span');
+                    span.textContent = char;
+                    span.style.setProperty('--delay', `${index * 0.1}s`);
+                    animatedTextElement.appendChild(span);
+                });
+
+                currentWordIndex = (currentWordIndex + 1) % words.length;
+            }
+
+           
+            setInterval(animateText, 2000);
+
+            
+            animateText();
+        </script>
+
+
+<script>
+    document.querySelector('.footer-newsletter form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const emailInput = document.querySelector('.footer-newsletter input');
+        const email = emailInput.value;
+
+        if (email) {
+          
+            const isValidEmail = /\S+@\S+\.\S+/.test(email);
+            if (isValidEmail) {
+                alert('Thank you for subscribing!');
+                emailInput.value = '';
+            } else {
+                alert('Please enter a valid email address.');
+            }
+        } else {
+            alert('Please enter your email.');
+        }
+    });
+</script>
+
+
+<script>
+
+    function showAdmin() {
+        document.getElementById('adminForm').style.left = '50px';
+        document.getElementById('agentForm').style.left = '450px';
+        document.getElementById('btn').style.left = '0px';
+    }
+
+    function showAgent() {
+        document.getElementById('adminForm').style.left = '-400px';
+        document.getElementById('agentForm').style.left = '50px';
+        document.getElementById('btn').style.left = '110px';
+    }
+
+
+
+</script>
+
+
+
+
+</html>

@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IKIBINA</title>
+    <link rel="icon" href="/favicon.ico" />
+  <!-- <link rel="stylesheet" href="style.css" />  -->  
+    
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="brand">
+                <h1>IKIBINA</h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">AboutUs</a></li>
+                    <li><a href="#">ContactUs</a></li>
+                    <li><a href="#" class="highlight" onclick="document.getElementById('Admin-form').style.display='block'" style="width: auto;">LOGIN</a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+
+
+
+
+
+    <div id="Admin-form" class="modal">
+        <div class="modal-content form-box">
+            <span class="close" id="closeModal">&times;</span>
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" onclick="showAdmin()" class="toggle-btn">Admin</button>
+                <button type="button" onclick="showAgent()" class="toggle-btn">Agent</button>
+            </div>
+            <form id="adminForm" class="input-group-Admin" action="connect1.php" method="post">
+                <input type="text" class="input-field" placeholder="izina ry' itsinda" name="izina">
+                <input type="password" class="input-field" placeholder="Umubare w' ibanga" name="password">
+                <button type="submit" class="submit-btn"><b>Kwinjira </b>(as Admin)</button>
+            </form>
+            <form id="agentForm" class="input-group-Agent" action="connect2.php" method="post">
+                <input type="text" class="input-field" placeholder="Izina" name="izina">
+                <input type="password" class="input-field" placeholder="Umubare w' ibanga" name="password">
+                <button type="submit" class="submit-btn"><b>Kwinjira </b>(as Agent)</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+    <div class="form-over">
+
+
+
+        <div class="form-description">
+            <div class="Theading" style="width: 100%; height: 5%; text-align: center;"><h1>JOIN IKIBINA AS AN AGENT : SHAPE THE FUTURE TODAY!</h1></div>
+
+
+
+            <div class="Bheading" style="width: 90%; height: 50%; background-color: whitesmoke; text-align: left; font-size: 17px; margin-left: 55px; padding: 12px; border-radius: 15px;">
+
+                <P><h2>
+                    1. Empower Communities: As an IKIBINA agent, you will be at the forefront of driving positive change, helping individuals and communities access essential services and opportunities.<br><br>
+
+
+                    2. Earn While Making a Difference: Enjoy the best of both worlds by contributing to meaningful causes while earning a competitive income. Your efforts will not only benefit others but also secure your financial future.<br><br>
+
+                    
+                    3. Extensive Training and Support: We provide comprehensive training and ongoing support to ensure you have all the tools and knowledge needed to succeed. No prior experience is necessary  just a passion for helping others!<br><br>
+
+                    
+                    4. Flexible Work Environment: Work at your own pace and on your terms. As an IKIBINA agent, you have the freedom to manage your schedule and balance work with other commitments.<br><br>
+
+                    
+                    5. Be Part of a Vibrant Community: Join a network of like-minded individuals who are dedicated to making a real difference. Connect, collaborate, and grow together as part of the IKIBINA family.<br><br>
+                </h2s></P>
+
+            </div>
+
+            <div class="Aheading" style="width: 50%; height: 40%; background-color: rgb(154, 154, 170); text-align: center; margin-left: 300px; margin-top: 10px; margin-bottom: 50px; border-radius: 15px; overflow: hidden;">
+                <img src="agent1.png" alt="Image 1" class="animated-image">
+                <img src="agent2.jpg" alt="Image 2" class="animated-image">
+                <img src="agent3.jpg" alt="Image 3" class="animated-image">
+              </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="form-container">
+            <h2>AgEnT Registration</h2>
+            <form action="your_server_endpoint" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="username"><b>Username:</b></label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password"><b>Password:</b></label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="id"><b>ID:</b></label>
+                    <input type="text" id="id" name="id" required>
+                </div>
+                <div class="form-group">
+                    <label for="names"><b>Names:</b></label>
+                    <input type="text" id="names" name="names" required>
+                </div>
+                <div class="form-group">
+                    <label for="address"><b>Address:</b></label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <div class="form-group">
+                    <label for="email"><b>Email:</b></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="nationality"><b>Nationality:</b></label>
+                    <input type="text" id="nationality" name="nationality" required>
+                </div>
+                <div class="form-group">
+                    <label for="picture"><b>Upload Picture:</b></label>
+                    <input type="file" id="picture" name="picture" accept="image/*" required>
+                </div>
+                <div class="form-group">
+                    <label for="document"><b>Upload Document:</b></label>
+                    <input type="file" id="document" name="document" accept=".pdf,.doc,.docx" required>
+                </div>
+                <div class="form-group">
+                    <label for="tel1"><b>Telephone Number 1:</b></label>
+                    <input type="tel" id="tel1" name="tel1" required>
+                </div>
+                <div class="form-group">
+                    <label for="tel2"><b>Telephone Number 2:</b></label>
+                    <input type="tel" id="tel2" name="tel2">
+                </div>
+                <div class="form-group">
+                    <label for="gender"><b>Gender:</b></label>
+                    <select id="gender" name="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="agree">I agree to the terms and conditions</label>
+                    <input type="checkbox" id="agree" name="agree" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Register</button>
+                </div>
+            </form>
+        </div>
+    
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section about-us" style="margin-right: 100px;">
+                <h2>About Us</h2>
+                <p>We are a leading saving company for rwanda, we providing top-notch banking services to cooperatives and local saving groups. Our mission is to deliver excellence transparency.</p>
+            </div>
+            <div class="footer-section contact-us">
+                <h2>Contact Us</h2>
+                <ul>
+                    <li>Email: <a href="ikibinarwanda@gmail.com">ikibinarwanda@gmail.com</a></li>
+                    <li>Phone: <a href="tel:+250788826080">+250788826080</a></li>
+                    <li>Address: RWANDA, MUSANZE, MUHOZA, HANGA</li>
+                </ul>
+            </div>
+            <div class="footer-section services">
+                <h2>Services</h2>
+                <ul>
+                    <li><a href="#">Saving</a></li>
+                    <li><a href="#">Loan</a></li>
+                    <li><a href="#">Transparent records</a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+            <div class="footer-section partnerships">
+                <h2>Partnerships</h2>
+                <div class="partner-logos">
+                    <img src="icp.png" alt="Partner 1">
+                    <img src="b.jpeg" alt="Partner 2">
+                    <img src="risa.png" alt="Partner 3">
+                </div>
+            </div>
+        </div>
+        <div class="footer-social">
+            <h2>FoLLOw Us</h2>
+            <ul class="social-links">
+                <li><a href="#"><img src="facebook.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="x.png" alt="Twitter"></a></li>
+                <li><a href="#"><img src="instagram.png" alt="Instagram"></a></li>
+                <li><a href="#"><img src="linkedin.png" alt="LinkedIn"></a></li>
+            </ul>
+        </div>
+        <div class="footer-newsletter">
+            <h2>LeT's CoNnEcT</h2>
+            <form action="#">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">CONNECT</button>
+            </form>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 BLOCKCHAIN BASED IKIBINA. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        document.getElementById('hamburger').addEventListener('click', function () {
+            document.querySelector('.nav-list').classList.toggle('open');
+        });
+    </script>
+</body>
+
+
+
+    <script>
+        var modal = document.getElementById('Admin-form');
+        var loginBtn = document.getElementById('loginBtn');
+        var closeModal = document.getElementById('closeModal');
+
+        
+        loginBtn.onclick = function() {
+            modal.style.display = 'block';
+        }
+
+        
+        closeModal.onclick = function() {
+            modal.style.display = 'none';
+        }
+
+   
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+}
+    </script>
+
+
+
+
+
+            <script>
+                const express = require('express');
+            const mysql = require('mysql');
+            const bodyParser = require('body-parser');
+            const multer = require('multer');
+            const path = require('path');
+
+            const app = express();
+            const port = 3000;
+
+            // Set up MySQL connection
+            const db = mysql.createConnection({
+            host: 'localhost',
+            user: 'root',
+            password: 'password', // replace with your MySQL password
+            database: 'agent_registration'
+            });
+
+            db.connect(err => {
+            if (err) throw err;
+            console.log('Connected to MySQL database');
+            });
+
+            // Middleware for parsing form data
+            app.use(bodyParser.urlencoded({ extended: true }));
+            app.use(multer({ dest: 'uploads/' }).fields([{ name: 'picture', maxCount: 1 }, { name: 'document', maxCount: 1 }]));
+
+            // Serve static files
+            app.use(express.static(path.join(__dirname, 'public')));
+
+            // Handle form submission
+            app.post('/register', (req, res) => {
+            const data = req.body;
+            const picture = req.files.picture[0];
+            const document = req.files.document[0];
+
+            const query = `INSERT INTO agents (username, password, id, names, address, email, nationality, picture_path, document_path, tel1, tel2, gender, agree) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`;
+            const values = [
+                data.username, data.password, data.id, data.names, data.address, data.email, data.nationality,
+                picture.path, document.path, data.tel1, data.tel2 || null, data.gender, data.agree ? 1 : 0
+            ];
+
+            db.query(query, values, (err, result) => {
+                if (err) throw err;
+                res.send('Registration successful!');
+            });
+            });
+
+            // Start server
+            app.listen(port, () => {
+            console.log(`Server running at http://localhost:${port}`);
+            });
+            </script>
+
+
+
+
+
+
+
+
+        <style>
+
+/* styles.css */
+
+body {
+    background-image: url(/src/IKIBINA_frontend/photo/a.jpg);
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 10px 20px;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+   
+}
+
+.brand h1 {
+    font-size: 30px;
+    margin: 0;
+    color: orange;
+}
+
+.nav {
+    position: relative;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin-right: 20px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-list li a:hover, .nav-list li a.highlight {
+    background-color: orange;
+    color: black;
+    border-radius: 5px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: white;
+    margin: 4px 0;
+    transition: transform 0.3s;
+}
+
+@media (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-list.open {
+        display: flex;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+   
+
+
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4); 
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+            .container1 {
+            display: flex;
+            align-items: center;
+            margin-left: 1100px;
+            font-family: 'Senmoly Caligan.otf';
+            
+        }
+
+        .constant {
+            font-size:4em;
+            margin-right: 20px;
+            margin-top: 350px;
+            padding: 0px;
+            color: rgb(49, 48, 48);
+        }
+
+        #animated-text span {
+            font-size: 4em;
+            opacity: 0;
+            display: inline-block;
+            animation: fadeIn 1s forwards;
+            animation-delay: var(--delay);
+            margin-top: 350px;
+            color: orange;
+           
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+
+
+
+
+
+                .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 40px 0;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-section {
+            flex: 1;
+            margin: 10px;
+            min-width: 200px;
+        }
+
+        .footer-section h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .footer-section p, .footer-section ul, .footer-section form {
+            font-size: 1em;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer-section .partner-logos img {
+            max-height: 50px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .footer-social {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .footer-social h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .social-links li {
+            margin: 0 10px;
+        }
+
+        .social-links img {
+            max-height: 30px;
+        }
+
+        .footer-newsletter {
+            text-align: center;
+            margin-top: 60px;
+            
+        }
+
+        .footer-newsletter form {
+            display: inline-block;
+            margin: 0 auto;
+            
+        }
+
+        .footer-newsletter input {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .footer-newsletter button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #555;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .footer-newsletter button:hover {
+            background-color: #777;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 10px;
+            background-color: #222;
+            color: #ccc;
+            margin-top: 50px;
+        }
+
+        .footer-bottom p {
+            margin: 0;
+        }
+
+        
+
+                @media (max-width: 768px) {
+                    .footer-container {
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                }
+
+
+                @font-face {
+                    font-family: 'Senmoly Caligan.otf';
+                    src: url('Senmoly Caligan.otf.otf');
+                    font-weight: normal;
+                    font-style: normal;
+                }
+
+
+
+
+
+
+                #Admin-form{
+		display: none;
+	}
+
+	.form-box{
+		width: 350px;
+		height: 480px;
+		position: relative;
+		margin: 2% auto;
+		background:rgba(255, 255, 255, 0.3);
+		padding: 10px;
+		overflow: hidden;
+		border-radius: 12px;
+        margin-top: 200px;
+	}
+
+	.button-box{
+		width: 220px;
+		margin: 35px auto;
+		position: relative;
+		box-shadow:0 0 20px #ff61241f;
+		border-radius: 30px;
+		text-align: center;
+        
+	}
+
+	.toggle-btn{
+		padding: 10px 30px;
+		cursor:ponter;
+		background: transparent;
+		border: 0;
+		outline: none;
+		position: relative;
+	}
+
+	#btn{
+		top: 0;
+		left: 0;
+		position: absolute;
+		width: 110px;
+		height: 100%;
+		background: #f3c693;
+		border-radius: 30px;
+		transition: .5s;
+	}
+
+	.input-group-Admin{
+		top: 150px;
+		position: absolute;
+		width: 280px;
+		transition:.5s;
+	}
+
+	.input-group-Agent{
+		top: 150px;
+		position: absolute;
+		width: 280px;
+		transition:.5s;
+	}
+
+	.input-field{
+		width: 100%;
+		padding: 10px 0;
+		margin: 5px 0;
+		border-left: 0;
+		border-top: 0;
+		border-right: 0;
+		border-bottom: 1px solid #999;
+		outline: none;
+		background: transparent;
+	}
+
+	.submit-btn{
+		width: 85%;
+		padding: 10px 30px;
+		cursor: pointer;
+		display: block;
+		margin: auto;
+		background: #f3c693;
+		border: 0;
+		outline: none;
+		border-radius: 30px
+	}
+
+	.checkbox{
+		margin: 30px 10px 34px 0;
+	}
+
+	.span{
+		color: #777;
+		font-size:12px;
+		bottom:68px;
+		position: absolute;
+	}
+
+	#Admin{
+		left:50px;
+	}
+
+	#Admin input{
+		color: white;
+		font-size: 15px;
+	}
+
+	#Agent{
+		left: 450px;
+	}
+
+	#Agent input{
+		color: white;
+		font-size: 15px;
+	}
+
+	.Admin-page{
+		padding: 1px;
+	}
+
+
+
+
+
+
+
+
+
+    .form-description {
+        width: 1200px;
+        height: 1310px;
+        background-color: white;
+        float: right;
+        margin-right: 50px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+
+
+    .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 130%;
+            margin-left: 100px;
+            margin-top: 100px;
+            margin-bottom: 250px;
+        }
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group input[type="file"] {
+            padding: 3px;
+        }
+        .form-group input[type="checkbox"] {
+            width: auto;
+        }
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .form-group button:hover {
+            background-color: #45a049;
+        }
+
+
+        .Aheading {
+              position: relative;
+            }
+            
+            .animated-image {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              opacity: 0;
+              animation: slideImages 20s infinite;
+            }
+            
+            @keyframes slideImages {
+              0%, 10% { opacity: 0; }
+              10%, 25% { opacity: 1; }
+              35%, 50% { opacity: 0; }
+              60%, 75% { opacity: 1; }
+              85% { opacity: 0; }
+            }
+    
+
+
+
+        </style>
+
+
+
+
+
+
+
+
+        <script>
+            const animatedTextElement = document.getElementById('animated-text');
+            const words = ["with transparency", "with security", "your best choice"]; 
+            let currentWordIndex = 0;
+
+            function animateText() {
+                
+                animatedTextElement.innerHTML = '';
+
+                const currentWord = words[currentWordIndex];
+                currentWord.split('').forEach((char, index) => {
+                    const span = document.createElement('span');
+                    span.textContent = char;
+                    span.style.setProperty('--delay', `${index * 0.1}s`);
+                    animatedTextElement.appendChild(span);
+                });
+
+                currentWordIndex = (currentWordIndex + 1) % words.length;
+            }
+
+           
+            setInterval(animateText, 2000);
+
+            
+            animateText();
+        </script>
+
+
+<script>
+    document.querySelector('.footer-newsletter form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const emailInput = document.querySelector('.footer-newsletter input');
+        const email = emailInput.value;
+
+        if (email) {
+          
+            const isValidEmail = /\S+@\S+\.\S+/.test(email);
+            if (isValidEmail) {
+                alert('Thank you for subscribing!');
+                emailInput.value = '';
+            } else {
+                alert('Please enter a valid email address.');
+            }
+        } else {
+            alert('Please enter your email.');
+        }
+    });
+</script>
+
+
+<script>
+
+    function showAdmin() {
+        document.getElementById('adminForm').style.left = '50px';
+        document.getElementById('agentForm').style.left = '450px';
+        document.getElementById('btn').style.left = '0px';
+    }
+
+    function showAgent() {
+        document.getElementById('adminForm').style.left = '-400px';
+        document.getElementById('agentForm').style.left = '50px';
+        document.getElementById('btn').style.left = '110px';
+    }
+
+
+
+</script>
+
+
+
+
+</html>
